@@ -1,6 +1,14 @@
-//build version: 1.0.1
-- Added custom command system.
+//build version: 1.0.3
+
+- Added API DLC (free for now).
+- Added AttackWithSSH DLC (paid).
+- Added Api-Hub to profile (ONLY IF U HAVE DLC).
+- Api started on :80 port (ONLY IF U HAVE DLC).
+- Change log design and hide admin logs.
+- Updated database/users.json & configs/plans.json & configs/methods.json
 - Bug fixes.
+
+//bug fix.
 
 ======================================== SETUP UZER PANEL =========================================
 
@@ -33,7 +41,7 @@ Start in not screen: ./start.sh
 =========================================== VARIABLES =============================================
 
 <<$USERNAME>> - User nickname.
-<<$ID>>" - User telegram id.
+<<$ID>> - User telegram id.
 <<$NAME>> - Name of stresser in configs/uzer.json["Name"]
 <<$PLAN>> - User plan name.
 <<$MAXTIME>> - User maximum attack duration.
@@ -63,6 +71,19 @@ Variables [
     <<$RESPONSE>> if have request("") - request response
     <<$ARGS[N]>> n it args index - arguments
     <<$BUILD_VERSION>> - build version
+]
+
+============================================== API ================================================
+
+Api started on: 0.0.0.0:80
+Api hub in: Main Menu -> Profile -> API
+
+(database in database/users.json auto recoded to new format when start)
+
+Api urls [
+    localhost:80/api/layer4/[METHOD]?key=[KEY]&host=[HOST]&port=[PORT]&time=[TIME]
+    localhost:80/api/layer7/[METHOD]?key=[KEY]&host=[HOST]&port=[PORT]&time=[TIME]
+    localhost:80/api/getProfile?key=[KEY]
 ]
 
 
