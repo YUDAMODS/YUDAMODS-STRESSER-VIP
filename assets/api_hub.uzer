@@ -1,0 +1,9 @@
+<b>API Hub</b>
+
+Example API url: <code>http://x.x.x.x/api/layer7/HTTP?key=<<$API_KEY>>%26host=https://google.com/%26port=443%26time=60</code>
+
+API url for Layer7 attacks: <code>http://x.x.x.x/api/layer7/[METHOD]?key=YOUR_KEY_HERE%26host=[TARGET]%26port=[PORT]%26time=[TIME]</code>
+API url for Layer7 attacks: <code>http://x.x.x.x/api/layer4/[METHOD]?key=YOUR_KEY_HERE%26host=[TARGET]%26port=[PORT]%26time=[TIME]</code>
+
+Current methods: <code>All methods without / (example: /http in telebot and http in api)</code>
+Your api key: <code><<$API_KEY>></code>
