@@ -5,6 +5,7 @@
     "Concurrents":0,
     "MaxTime":0,
     "Premium":false,
+    "Api": false,
     "Expired":999999
   },
   {
@@ -12,7 +13,17 @@
     "PriceUSD":10,
     "Concurrents":1,
     "MaxTime":60,
+    "Premium":false,
+    "Api": false,
+    "Expired":30
+  },
+  {
+    "Name":"Premium",
+    "PriceUSD":25,
+    "Concurrents":2,
+    "MaxTime":180,
     "Premium":true,
+    "Api": true,
     "Expired":30
   }
 ]

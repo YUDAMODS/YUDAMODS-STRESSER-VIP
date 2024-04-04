@@ -8,9 +8,10 @@
     "Premium":false,
     "Layer":4,
     "Apis":[
-      "https://www.google.com/api?key=yesthiskey&target=<<$TARGET>>&port=<<$PORT>>&dtime=<<$TIME>>&method=UDP-FUCK",
+      "https://www.google.com/api?key=yesthiskey&target=<<$TARGET>>&port=<<$PORT>>&time=<<$TIME>>&method=UDP-FUCK",
       "http://google.com/api?key=yesthiskey&target=<<$TARGET>>&port=<<$PORT>>&dtime=<<$TIME>>&method=UDP"
-    ]
+    ],
+    "Servers": []
   },
   {
     "Command":"/http",
@@ -20,8 +21,17 @@
     "Premium":true,
     "Layer":7,
     "Apis":[
-      "https://www.google.com/api?key=yesthiskey&target=<<$TARGET>>&port=<<$PORT>>&dtime=<<$TIME>>&method=HTTP",
-      "http://google.com/api?key=yesthiskey&target=<<$TARGET>>&port=<<$PORT>>&dtime=<<$TIME>>&method=HTTPS"
+      "https://www.google.com/api?key=yesthiskey&target=<<$TARGET>>&port=<<$PORT>>&time=<<$TIME>>&method=HTTP",
+      "http://google.com/api?key=yesthiskey&target=<<$TARGET>>&port=<<$PORT>>&time=<<$TIME>>&method=HTTPS"
+    ],
+    "Servers": [
+      {
+        "Ip": "8.8.8.8",
+        "Port": "22",
+        "User": "root",
+        "Password": "pass",
+        "Command": "node test.js <<$TARGET>> <<$PORT>> <<$TIME>> proxy.js (REPLACE TO "Servers": [] IF U NOT HAVE DLC)"
+      }
     ]
   }
 
